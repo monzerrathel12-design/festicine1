@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #00f0ff;
+    text-shadow: 0 0 10px #00f0ff;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+    margin: 40px 0 20px 0;
+}
+
+h3 {
+    color: #00f0ff;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-pink {
+    background-color: #ff00ff;
+    color: #000;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+.btn-blue {
+    background-color: #00f0ff;
+    color: #000;
+    box-shadow: 0 0 10px #00f0ff;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.programming, .cines, .combos, .promos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    border: 2px solid #00f0ff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px #00f0ff;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.neon-text {
+    color: #00f0ff;
+    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;
+}
+
+/* Animación neón para el título */
+@keyframes neon {
+    0%, 100% { text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff; }
+    50% { text-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff; }
+}
+
+h1 {
+    animation: neon 2s infinite;
+}
